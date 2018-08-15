@@ -1,0 +1,11 @@
+[DEV]
+API_KEY = my-api-key
+
+[USER]
+INPUT_PATH = /home/user/Downloads/
+OUTPUT_PATH = /home/user/Library/
+
+[DEFAULT]
+FILE_EXT = .pdf
+FILE_ISBN = ISBN_13
+MAX_RESULTS = 5

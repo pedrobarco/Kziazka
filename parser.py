@@ -174,7 +174,7 @@ def gen_metadata(authors, title, subtitle, category, publisher, published_date, 
 
 def gen_filename(category, authors, title, isbn):
     authors_f = ' & '.join(authors)
-    directory = f'{output_path}/{category}/{authors_f}/{title} [{isbn}]'
+    directory = f'{output_path}/{category}/{title} [{isbn}]'
     filename = f'{directory}/{title} - {authors_f}{file_ext}'
     return filename
 
@@ -229,7 +229,7 @@ if __name__ == '__main__':
 
     api_key = config['DEV']['API_KEY']
     input_path = config['USER']['INPUT_PATH']
-    output_path = config['USER']['OUTPUT_PATH'] + '/Books/'
+    output_path = config['USER']['OUTPUT_PATH'] + 'Books'
     file_ext = config['DEFAULT']['FILE_EXT']
     file_isbn = config['DEFAULT']['FILE_ISBN']
     max_results = config['DEFAULT']['MAX_RESULTS']
